@@ -3,7 +3,7 @@ import json
 from pprint import pprint as pp
 from bs4 import BeautifulSoup
 
-url = 'https://www.cnn.com/europe/live-news/ukraine-russia-news-02-24-22-intl/index.html'
+url = 'https://www.cnn.com/europe/live-news/ukraine-russia-news-02-25-22/index.html'
 
 
 text = requests.get(url).text
