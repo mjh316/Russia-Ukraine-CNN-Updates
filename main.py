@@ -12,18 +12,18 @@ datetime_WA = datetime.now(tz_WA)
 
 url1 = base_url.format(
     str(datetime_WA.month).rjust(2, '0'),
-    str(datetime_WA.day).rjust(0, '2'),
+    str(datetime_WA.day).rjust(2, '0'),
     str(datetime_WA.year)[-2:],
     '-intl'
 )
 
 url2 = base_url.format(
     str(datetime_WA.month).rjust(2, '0'),
-    str(datetime_WA.day).rjust(0, '2'),
+    str(datetime_WA.day).rjust(2, '0'),
     str(datetime_WA.year)[-2:],
     ''
 )
-#print(url1 + '\n' + url2)
+print(url1 + '\n' + url2)
 
 text = requests.get(url1).text
 soup = BeautifulSoup(text, features='lxml')
