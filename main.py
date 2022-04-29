@@ -5,7 +5,7 @@ from datetime import datetime
 from pprint import pprint as pp
 from bs4 import BeautifulSoup
 
-base_url = 'https://www.cnn.com/europe/live-news/ukraine-russia-putin-news-{}-{}-{}{}/index.html'
+base_url = 'https://www.cnn.com/europe/live-news/russia-ukraine-war-news-{}-{}-{}{}/index.html'
 
 tz_WA = pytz.timezone('US/Pacific')
 datetime_WA = datetime.now(tz_WA)
